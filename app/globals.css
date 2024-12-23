@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #352F44;
+  --secondary-color: #5C5470;
+  --text-color: #DBD8E3;
+  --background-color: #2A2438;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--text-color);
+  background: var(--background-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  padding: 1.5rem 10rem;
+}
+
+.header-brand {
+  font-size: larger;
+  font-weight: 800;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.home {
+  padding: 1.5rem 10rem;
+  height: 87vh;
+  text-align: center;
+  align-content: center;
+
+  .title {
+    font-size: 130px;
+    font-weight: 600;
+    font-variant: all-small-caps;
+  }
+
+  .img-home {
+    width: 400px;
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  .sub-title {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: -50px;
+    padding: 0 70px;
+  }
+  
+  .title-name {
+    font-size: 20px;
+    text-align: right;
+    margin-top: -35px;
+    padding: 0 90px;
+  }
+}
+
+.nav-link {
+  position: relative;
+  color: var(--text-color);
+  text-decoration: none;
+  padding-bottom: 7px;
+}
+
+.nav-link.active {
+  color: var(--text-color);
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  left: 0;
+  justify-self: center;
+  border-radius: 100px;
+  right: 0;
+  height: 4px;
+  background-color: var(--text-color);
+  bottom: 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 4px;
+  justify-self: center;
+  border-radius: 100px;
+  background-color: var(--text-color);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* transform: scaleX(0); */
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+  left: 0;
+  transform: translateX(0);
+}
