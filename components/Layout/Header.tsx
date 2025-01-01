@@ -1,11 +1,12 @@
 "use client";
 
+import { handleScroll } from "@/functions/general";
 import { list } from "postcss";
 import { useEffect, useState } from "react";
 
 export default function Header() {
     const [isMenuAcive, setIsMenuActive] = useState("home");
-    const listMenu = ["Home", "Project", "About", "Experience", "Contact"];
+    const listMenu = ["Home", "About", "Service", "Project", "Testimonial"];
 
     useEffect(() => {
         const sections = document.querySelectorAll('section');
@@ -32,17 +33,21 @@ export default function Header() {
                 observer.unobserve(section);
             });
         };
+
     }, []);
 
     return (
-        <header className="header">
+        <header className={`header`}>
             <a className="header-brand" href="index.html">TEGUH</a>
             <nav className="navbar">
                 <ul className="navbar-nav nav">
                     {
                         listMenu.map((item, index) => (
-                            <li className="nav-item" key={index}>
-                                <a href="#" className={`nav-link ${isMenuAcive === item.toLowerCase() && 'active'}`}><span>{item}</span></a>
+                            <li className="nav-item" onClick={() => handleScroll(item.toLowerCase(), setIsMenuActive)} key={index}>
+                                {
+                                    item === "Home" ? <a href="#" className={`nav-link ${isMenuAcive === item.toLowerCase() && 'active'}`}><span>{item}</span></a>
+                                    :<a href={`#${item.toLowerCase()}`} className={`nav-link ${isMenuAcive === item.toLowerCase() && 'active'}`}><span>{item}</span></a>
+                                }
                             </li>
                         ))
                     }
