@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import '../../app/style/testimonial.css';
 
 export default function Testimonial() {
     const [isVisible, setIsVisible] = useState(false);
@@ -61,7 +62,7 @@ export default function Testimonial() {
                 <div className={`title ${isVisible && "animate-fadeIn"}`}>TESTIMONIAL</div>
                 <div className={`tagline ${isVisible && "animate-fadeIn"}`}><span className="sub-tagline">My Happy</span> Client</div>
             </div>
-            <div className="grid grid-cols-2 gap-5">
+            <div className="grid md:grid-cols-2 gap-5">
                 {
                     data.map((item, index) => (
                         <div className={`card ${isVisible && index % 2 === 0 && "animate-slideInLeft" || isVisible && index % 2 === 1 && "animate-slideInRight"}`} key={index}>

@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import '../../app/style/service.css';
+import '../../app/style/contact.css';
 
 export default function Service() {
     const [isVisibleService, setIsVisibleService] = useState(false);
@@ -80,7 +82,7 @@ export default function Service() {
                     <div className={`title-service ${isVisibleService && "animate-fadeIn"}`}>MY SERVICE</div>
                     <div className={`title-tagline ${isVisibleService && "animate-fadeIn"}`}><span className="sub-title-tagline">The Best</span> Service I Provide</div>
                 </div>
-                <div className="grid grid-cols-3 gap-5">
+                <div className="container-card">
                     {
                         data.map((item, index) => (
                             <div className={`card ${isVisibleService && "animate-zoomIn"}`} key={index}>

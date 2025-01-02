@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import ModalProject from "../Modal/ModalProject";
+import '../../app/style/project.css';
 
 export default function Project() {
     var data = {

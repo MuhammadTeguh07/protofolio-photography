@@ -1,0 +1,69 @@
+.contact {
+  background-color: var(--accent-color-light);
+  padding: 5rem 10rem;
+  color: var(--text-color-dark);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  .title-tagline {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+  }
+
+  .sub-title-tagline {
+    font-style: italic;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color-dark);
+    color: transparent;
+  }
+
+  .btn-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    font-size: medium;
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: var(--secondary-color-dark);
+    color: var(--text-color-light);
+    transition: background-color 0.5s ease, width 0.5s ease;
+  }
+
+  .btn-contact:hover {
+    width: 200px;
+    background-color: var(--primary-color);
+  }
+}
+
+/* Medium Devices (Tablet Landscape and Small Desktops) - <= 1024px */
+@media (max-width: 1024px) {
+  .contact {
+    padding: 5rem 4rem;
+
+    .title-tagline {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+}
+
+/* Small Devices (Tablet Portrait) - <= 768px */
+@media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1.5rem;
+
+    .title-tagline {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    .sub-title-tagline {
+      white-space: nowrap;
+    }
+  }
+}

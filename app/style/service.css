@@ -1,0 +1,90 @@
+.service {
+  background-color: var(--background-color);
+  padding: 7rem 10rem;
+  color: var(--text-color-dark);
+  text-align: center;
+
+  .title-service {
+    letter-spacing: 10px;
+  }
+
+  .title-tagline {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+  }
+
+  .sub-title-tagline {
+    font-style: italic;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color-dark);
+    color: transparent;
+  }
+
+  .container-card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .card {
+    justify-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--secondary-color-light);
+    transition: color 0.5s ease, background-color 0.5s ease,
+      letter-spacing 0.5s ease;
+  }
+
+  .card:hover {
+    color: var(--text-color-light);
+    background-color: var(--secondary-color-dark);
+    letter-spacing: 7px;
+  }
+
+  .card img {
+    transition: filter 0.5s ease;
+  }
+
+  .card:hover img {
+    filter: invert(1);
+  }
+}
+
+/* Medium Devices (Tablet Landscape and Small Desktops) - <= 1024px */
+@media (max-width: 1024px) {
+  .service {
+    padding: 5rem 4rem;
+
+    .title-service {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .title-tagline {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+}
+
+/* Small Devices (Tablet Portrait) - <= 768px */
+@media (max-width: 768px) {
+  .service {
+    padding: 3rem 1.5rem;
+    
+    .title-service {
+      font-size: 15px;
+    }
+
+    .title-tagline {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    .container-card {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+  }
+}

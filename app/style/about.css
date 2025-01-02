@@ -1,0 +1,82 @@
+.about {
+  gap: 120px;
+  background-color: var(--primary-color);
+  padding: 7rem 10rem;
+  color: var(--text-color-light);
+  display: flex;
+
+  img {
+    width: 400px;
+  }
+
+  .title-about {
+    letter-spacing: 10px;
+  }
+
+  .title-tagline {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+  }
+
+  .sub-title-tagline {
+    font-style: italic;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color-light);
+    color: transparent;
+  }
+
+  .title-desc {
+    text-wrap: balance;
+  }
+
+  .img-about {
+    border-radius: 20px;
+  }
+}
+
+/* Medium Devices (Tablet Landscape and Small Desktops) - <= 1024px */
+@media (max-width: 1024px) {
+  .about {
+    padding: 5rem 4rem;
+    gap: 60px;
+
+    .title-about {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .title-tagline {
+      font-size: 45px;
+      line-height: 45px;
+    }
+
+    .img-about {
+      width: 350px;
+      height: 400px;
+    }
+  }
+}
+
+/* Small Devices (Tablet Portrait) - <= 768px */
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1.5rem;
+    flex-direction: column;
+    gap: 50px;
+
+    .title-about {
+      font-size: 15px;
+    }
+
+    .title-tagline {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    .img-about {
+      width: 250px;
+      height: 350px;
+    }
+  }
+}

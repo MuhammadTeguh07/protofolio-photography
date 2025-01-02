@@ -4,10 +4,11 @@ import Image from "next/image";
 import { list } from "postcss";
 import { useEffect, useState } from "react";
 import Socials from "../Button/Social";
+import "../../app/style/home.css";
 
 export default function Home() {
     return (
-        <div className="home flex justify-between">
+        <div className="home">
             <div className="content-center">
                 <span className="subtitle-home animate-fadeIn">
                     I AM PHOTOGRAPHER

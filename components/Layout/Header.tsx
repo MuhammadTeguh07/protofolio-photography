@@ -3,6 +3,8 @@
 import { handleScroll } from "@/functions/general";
 import { list } from "postcss";
 import { useEffect, useState } from "react";
+import "../../app/style/header.css";
+import { FaBars } from "react-icons/fa";
 
 export default function Header() {
     const [isMenuAcive, setIsMenuActive] = useState("home");
@@ -53,6 +55,7 @@ export default function Header() {
                     }
                 </ul >
             </nav >
+            <FaBars className="menu-icon" />
         </header >
     )
 }
