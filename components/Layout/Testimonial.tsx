@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import '../../app/style/testimonial.css';
 
 export default function Testimonial() {
     const [isVisible, setIsVisible] = useState(false);

@@ -2,7 +2,6 @@
 
 import { handleScroll } from "@/functions/general";
 import { useEffect, useState } from "react";
-import "../../app/style/header.css";
 import DrawerTop from "../Drawer/DrawerTop";
 
 export default function Header() {

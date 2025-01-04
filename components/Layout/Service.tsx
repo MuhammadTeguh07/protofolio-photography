@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import '../../app/style/service.css';
-import '../../app/style/contact.css';
 
 export default function Service() {
     const [isVisibleService, setIsVisibleService] = useState(false);

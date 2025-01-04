@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import '../../app/style/about.css';
 
 export default function About() {
     const [isVisible, setIsVisible] = useState(false);

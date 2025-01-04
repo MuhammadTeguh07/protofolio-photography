@@ -1,7 +1,6 @@
 "use client";
 
 import SocialFooters from "../Button/SocialFooter";
-import '../../app/style/footer.css';
 
 export default function Footer() {
     return (
