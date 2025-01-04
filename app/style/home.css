@@ -57,7 +57,7 @@
 @media (max-width: 768px) {
   .home {
     padding: 3rem 1.5rem;
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: 100vh;
 
     .title-home {
@@ -67,6 +67,7 @@
 
     .subtitle-home {
       text-align: center;
+      margin-bottom: 10px;
     }
 
     .img-home {

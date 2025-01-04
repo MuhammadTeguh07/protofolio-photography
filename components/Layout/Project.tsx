@@ -51,7 +51,7 @@ export default function Project() {
                     <div className={`title-project ${isVisible && "animate-fadeIn"}`}>MY PROJECTS</div>
                     <div className={`title-tagline ${isVisible && "animate-fadeIn"}`}>The <span className="sub-title-tagline">Moment</span> I Have Captured</div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div id="project-col-3" className="grid-cols-3 gap-4">
                     <div className="grid gap-4">
                         <div className={`img-container ${isVisible && "animate-zoomIn"}`} onClick={() => { openModal(); setSelectedImgProject(data.graduation); }}>
                             <Image className="img-project" unoptimized src={data.graduation[0]} alt="photo" width={500} height={500} />
@@ -76,6 +76,36 @@ export default function Project() {
                         <div className={`img-container ${isVisible && "animate-zoomIn"}`} onClick={() => { openModal(); setSelectedImgProject(data.sport); }} >
                             <Image className="img-project" unoptimized src={data.sport[0]} alt="photo" width={500} height={500} />
                             <span className="title-img">Sport</span>
+                        </div>
+                        <div className={`img-container ${isVisible && "animate-zoomIn"}`} onClick={() => { openModal(); setSelectedImgProject(data.wedding); }} >
+                            <Image className="img-project" unoptimized src={data.wedding[0]} alt="photo" width={500} height={500} />
+                            <span className="title-img">Wedding</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="project-col-2" className="grid-cols-2 gap-4">
+                    <div className="grid gap-4">
+                        <div className={`img-container ${isVisible && "animate-zoomIn"}`} onClick={() => { openModal(); setSelectedImgProject(data.graduation); }}>
+                            <Image className="img-project" unoptimized src={data.graduation[0]} alt="photo" width={500} height={500} />
+                            <span className="title-img">Graduation</span>
+                        </div>
+                        <div className={`img-container ${isVisible && "animate-zoomIn"}`} onClick={() => { openModal(); setSelectedImgProject(data.food); }} >
+                            <Image className="img-project" unoptimized src={data.food[0]} alt="photo" width={500} height={500} />
+                            <span className="title-img">Food</span>
+                        </div>
+                        <div className={`img-container ${isVisible && "animate-zoomIn"}`} onClick={() => { openModal(); setSelectedImgProject(data.sport); }} >
+                            <Image className="img-project" unoptimized src={data.sport[0]} alt="photo" width={500} height={500} />
+                            <span className="title-img">Sport</span>
+                        </div>
+                    </div>
+                    <div className="grid gap-4">
+                        <div className={`img-container ${isVisible && "animate-zoomIn"}`} onClick={() => { openModal(); setSelectedImgProject(data.product); }} >
+                            <Image className="img-project" unoptimized src={data.product[0]} alt="photo" width={500} height={500} />
+                            <span className="title-img">Product</span>
+                        </div>
+                        <div className={`img-container ${isVisible && "animate-zoomIn"}`} onClick={() => { openModal(); setSelectedImgProject(data.fashion); }} >
+                            <Image className="img-project" unoptimized src={data.fashion[0]} alt="photo" width={500} height={500} />
+                            <span className="title-img">Fashion</span>
                         </div>
                         <div className={`img-container ${isVisible && "animate-zoomIn"}`} onClick={() => { openModal(); setSelectedImgProject(data.wedding); }} >
                             <Image className="img-project" unoptimized src={data.wedding[0]} alt="photo" width={500} height={500} />

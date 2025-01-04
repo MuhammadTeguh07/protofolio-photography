@@ -54,6 +54,14 @@
   .img-container:hover .title-img {
     opacity: 1;
   }
+
+  #project-col-3 {
+    display: grid;
+  }
+
+  #project-col-2 {
+    display: none;
+  }
 }
 
 /* Medium Devices (Tablet Landscape and Small Desktops) - <= 1024px */
@@ -90,6 +98,14 @@
     .container-card {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1.25rem;
+    }
+
+    #project-col-3 {
+      display: none;
+    }
+    
+    #project-col-2 {
+      display: grid;
     }
   }
 }
