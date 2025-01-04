@@ -28,7 +28,7 @@
   }
 
   .card {
-    justify-items: center;
+    place-items: center;
     padding: 20px;
     border-radius: 20px;
     background-color: var(--secondary-color-light);
