@@ -48,7 +48,7 @@ export default function Service() {
         };
     }, []);
 
-    var data = [
+    const data = [
         {
             title: "Wedding",
             icon: "/icons/wedding.png",
@@ -79,13 +79,13 @@ export default function Service() {
         <div className="container-service">
             <div ref={sectionServiceRef} className="service">
                 <div className="flex flex-col gap-3 pb-14">
-                    <div className={`title-service ${isVisibleService && "animate-fadeIn"}`}>MY SERVICE</div>
-                    <div className={`title-tagline ${isVisibleService && "animate-fadeIn"}`}><span className="sub-title-tagline">The Best</span> Service I Provide</div>
+                    <div className={`title-service ${isVisibleService && 'animate-fadeIn'}`}>MY SERVICE</div>
+                    <div className={`title-tagline ${isVisibleService && 'animate-fadeIn'}`}><span className="sub-title-tagline">The Best</span> Service I Provide</div>
                 </div>
                 <div className="container-card">
                     {
                         data.map((item, index) => (
-                            <div className={`card ${isVisibleService && "animate-zoomIn"}`} key={index}>
+                            <div className={`card ${isVisibleService && 'animate-zoomIn'}`} key={index}>
                                 <Image className="pb-3" src={item.icon} alt="photo" width={70} height={70} />
                                 <div className="title-card">{item.title}</div>
                             </div>
@@ -94,9 +94,9 @@ export default function Service() {
                 </div>
             </div>
             <div ref={sectionContactRef} className="contact">
-                <div className={`title-tagline ${isVisibleContact && "animate-fadeIn"}`}>Keep In Touch <span className="sub-title-tagline">With Me</span></div>
-                <button type="button" className={`btn-contact ${isVisibleContact && "animate-zoomIn"}`}>
-                    Let's Talk
+                <div className={`title-tagline ${isVisibleContact && 'animate-fadeIn'}`}>Keep In Touch <span className="sub-title-tagline">With Me</span></div>
+                <button type="button" className={`btn-contact ${isVisibleContact && 'animate-zoomIn'}`}>
+                    Let&#39;s Talk
                     <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>

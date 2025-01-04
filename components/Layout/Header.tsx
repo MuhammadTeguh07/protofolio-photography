@@ -1,7 +1,6 @@
 "use client";
 
 import { handleScroll } from "@/functions/general";
-import { list } from "postcss";
 import { useEffect, useState } from "react";
 import "../../app/style/header.css";
 import DrawerTop from "../Drawer/DrawerTop";

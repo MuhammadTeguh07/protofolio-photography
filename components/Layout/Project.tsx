@@ -6,7 +6,7 @@ import ModalProject from "../Modal/ModalProject";
 import '../../app/style/project.css';
 
 export default function Project() {
-    var data = {
+    const data = {
         graduation: ["/images/graduation-2.jpg", "/images/graduation-3.webp"],
         food: ["/images/food-4.jpg", "/images/food-2.webp", "/images/food-3.jpg"],
         product: ["/images/product-5.jpg", "/images/product-3.jpeg", "/images/product-6.jpg"],

@@ -7,7 +7,6 @@ import Home from "@/components/Layout/Home";
 import Project from "@/components/Layout/Project";
 import Service from "@/components/Layout/Service";
 import Testimonial from "@/components/Layout/Testimonial";
-import Image from "next/image";
 import { useEffect } from "react";
 
 export default function RootPage() {

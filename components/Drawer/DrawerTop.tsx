@@ -8,7 +8,7 @@ interface Props {
     listMenu: string[]
     isMenuActive: string
     setIsMenuActive: React.Dispatch<React.SetStateAction<string>>
-    handleScroll: (id: string, setIsMenuActive?: any) => void
+    handleScroll: (id: string, setIsMenuActive?: React.Dispatch<React.SetStateAction<string>>) => void
 }
 
 const DrawerTop: React.FC<Props> = ({ listMenu, isMenuActive, setIsMenuActive, handleScroll }) => {

@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { list } from "postcss";
-import { useEffect, useState } from "react";
 import Socials from "../Button/Social";
 import "../../app/style/home.css";
 

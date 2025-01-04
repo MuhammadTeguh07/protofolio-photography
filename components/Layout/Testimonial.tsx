@@ -8,7 +8,7 @@ export default function Testimonial() {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
 
-    var data = [
+    const data = [
         {
             title: "Robert Doe",
             subtitle: "Product Owner",
@@ -77,7 +77,7 @@ export default function Testimonial() {
                                 </div>
                             </div>
                             <div className="desc-card">
-                                "{item.desc}"
+                                &#34;{item.desc}&#34;
                             </div>
                         </div>
                     ))
